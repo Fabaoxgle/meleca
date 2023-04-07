@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>MELECA GAMES BETS</title>
+	<title>Jogos do Meleca</title>
 	<style>
 		body {
 			background-color: blue;
+			color: white;
 		}
 		h1, h2 {
 			color: yellow;
@@ -12,34 +13,74 @@
 		}
 		button {
 			background-color: yellow;
+			color: blue;
 			font-size: 24px;
+			padding: 10px;
 			margin: 10px;
-			padding: 10px 20px;
+			border-radius: 10px;
+			border: none;
+			cursor: pointer;
+		}
+		button img {
+			width: 200px;
+			height: 200px;
 		}
 	</style>
 </head>
 <body>
-	<h1>MELECA GAMES BETS</h1>
-	<h2>Aqui você não é enganado!</h2>
-	
+	<h1>Jogos do Meleca</h1>
+	<h2>Para passar o seu tempo! Conheça aqui na página como jogá-los!</h2>
 	<div>
-		<button onclick="window.open('bingo.pdf', '_blank');">Bingo</button>
-		<button onclick="window.open('buraco.pdf', '_blank');">Buraco</button>
-		<button onclick="window.open('tombola.pdf', '_blank');">Tômbola</button>
-		<button onclick="window.open('videoslots.pdf', '_blank');">VideoSlots</button>
-		<button onclick="window.open('parcheesi.pdf', '_blank');">Parcheesi</button>
+		<button onclick="downloadPDF('bingo.pdf')">
+			<img src="bingo.jpg" alt="Bingo">
+			<br>Bingo
+		</button>
+		<button onclick="downloadPDF('buraco.pdf')">
+			<img src="buraco.jpg" alt="Buraco">
+			<br>Buraco
+		</button>
+		<button onclick="downloadPDF('tombola.pdf')">
+			<img src="tombola.jpg" alt="Tômbola">
+			<br>Tômbola
+		</button>
+		<button onclick="downloadPDF('videoslots.pdf')">
+			<img src="videoslots.jpg" alt="VideoSlots">
+			<br>VideoSlots
+		</button>
+		<button onclick="downloadPDF('parcheesi.pdf')">
+			<img src="parcheesi.jpg" alt="Parcheesi">
+			<br>Parcheesi
+		</button>
+		<button onclick="downloadPDF('loto.pdf')">
+			<img src="loto.jpg" alt="Loto">
+			<br>Loto
+		</button>
+		<button onclick="downloadPDF('futebol.pdf')">
+			<img src="futebol.jpg" alt="Futebol">
+			<br>Futebol
+		</button>
+		<button onclick="downloadPDF('domino.pdf')">
+			<img src="domino.jpg" alt="Dominó">
+			<br>Dominó
+		</button>
+		<button onclick="downloadPDF('xadrez.pdf')">
+			<img src="xadrez.jpg" alt="Xadrez">
+			<br>Xadrez
+		</button>
+		<button onclick="downloadPDF('damas.pdf')">
+			<img src="damas.jpg" alt="Damas">
+			<br>Damas
+		</button>
 	</div>
-	
-	<div>
-		<button onclick="window.open('loto.pdf', '_blank');">Loto</button>
-		<button onclick="window.open('futebol.pdf', '_blank');">Futebol</button>
-		<button onclick="window.open('domino.pdf', '_blank');">Dominó</button>
-		<button onclick="window.open('xadrez.pdf', '_blank');">Xadrez</button>
-		<button onclick="window.open('damas.pdf', '_blank');">Damas</button>
-	</div>
-	
 	<footer>
 		<p>Pagamento no pix, em até 5 minutos.</p>
 	</footer>
+
+	<script>
+		function downloadPDF(filename) {
+			// TODO: implementar o código de download do arquivo PDF
+			alert('Download do arquivo ' + filename + ' iniciado!');
+		}
+	</script>
 </body>
 </html>
