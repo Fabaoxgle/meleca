@@ -1,63 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>JOGOS DO MELECA</title>
-	<meta charset="utf-8">
-	<style type="text/css">
-		body {
-			background-color: blue;
-		}
-
-		h1, h2 {
-			color: yellow;
-			text-align: center;
-		}
-
-		button {
-			background-color: yellow;
-			color: blue;
-			font-size: 20px;
-			padding: 10px;
-			margin: 5px;
-			border: none;
-			border-radius: 5px;
-			cursor: pointer;
-		}
-
-		footer {
-			position: fixed;
-			bottom: 0;
-			width: 100%;
-			text-align: center;
-			color: white;
-			font-size: 18px;
-			padding: 10px;
-			background-color: black;
-		}
-	</style>
-</head>
-<body>
-	<h1>JOGOS DO MELECA</h1>
-	<h2>Para passar o seu tempo!</h2>
-
-	<button onclick="downloadPDF('Bingo.pdf')"><img src="bingo.jpg" alt="Bingo" height="100"></button>
-	<button onclick="downloadPDF('Buraco.pdf')"><img src="buraco.jpg" alt="Buraco" height="100"></button>
-	<button onclick="downloadPDF('Tombola.pdf')"><img src="tombola.jpg" alt="Tômbola" height="100"></button>
-	<button onclick="downloadPDF('VideoSlots.pdf')"><img src="videoslots.jpg" alt="VideoSlots" height="100"></button>
-	<button onclick="downloadPDF('Parcheesi.pdf')"><img src="parcheesi.jpg" alt="Parcheesi" height="100"></button>
-	<button onclick="downloadPDF('Loto.pdf')"><img src="loto.jpg" alt="Loto" height="100"></button>
-	<button onclick="downloadPDF('Futebol.pdf')"><img src="futebol.jpg" alt="Futebol" height="100"></button>
-	<button onclick="downloadPDF('Domino.pdf')"><img src="domino.jpg" alt="Dominó" height="100"></button>
-	<button onclick="downloadPDF('Xadrez.pdf')"><img src="xadrez.jpg" alt="Xadrez" height="100"></button>
-	<button onclick="downloadPDF('Damas.pdf')"><img src="damas.jpg" alt="Damas" height="100"></button>
-
-	<footer>Criação Fabão Santos</footer>
-
-	<script type="text/javascript">
-		function downloadPDF(fileName) {
-			window.location.href = fileName;
-		}
-	</script>
-</body>
+  <head>
+    <title style="color: yellow;">JOGOS MELECA</title>
+    <meta charset="UTF-8">
+    <style>
+      body {
+        background-color: blue;
+      }
+      h2 {
+        color: yellow;
+      }
+      button {
+        background-color: orange;
+        width: 150px;
+        height: 50px;
+        margin: 10px;
+      }
+      footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: blue;
+        color: white;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: yellow;">JOGOS MELECA</h1>
+    <h2>Para passar o seu tempo! Conheça aqui na página como jogá-los!</h2>
+    
+    <button onclick="window.open('bingo.pdf', '_blank')">
+      <img src="bingo.jpg" alt="Bingo">
+    </button>
+    
+    <button onclick="window.open('buraco.pdf', '_blank')">
+      <img src="buraco.jpg" alt="Buraco">
+    </button>
+    
+    <button onclick="window.open('damas.pdf', '_blank')">
+      <img src="damas.jpg" alt="Damas">
+    </button>
+    
+    <button onclick="window.open('domino.pdf', '_blank')">
+      <img src="domino.jpg" alt="Dominó">
+    </button>
+    
+    <button onclick="window.open('futebol.pdf', '_blank')">
+      <img src="futebol.jpg" alt="Futebol">
+    </button>
+    
+    <button onclick="window.open('loto.pdf', '_blank')">
+      <img src="loto.jpg" alt="Loto">
+    </button>
+    
+    <button onclick="window.open('parcheesi.pdf', '_blank')">
+      <img src="parcheesi.jpg" alt="Parcheesi">
+    </button>
+    
+    <button onclick="window.open('tombola.pdf', '_blank')">
+      <img src="tombola.jpg" alt="Tômbola">
+    </button>
+    
+    <button onclick="window.open('video_slots.pdf', '_blank')">
+      <img src="video_slots.jpg" alt="VideoSlots">
+    </button>
+    
+    <button onclick="window.open('xadrez.pdf', '_blank')">
+      <img src="xadrez.jpg" alt="Xadrez">
+    </button>
+    
+    <footer>Criado por Fábio Santos</footer>
+  </body>
 </html>
+
+	
+
 
