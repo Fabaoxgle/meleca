@@ -1,51 +1,81 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>JOGOS MELECA</title>
-    <style>
-      body {
-        background-image: url("campo.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      
-      h1, h2 {
-        color: yellow;
-        text-align: center;
-      }
-      
-      button {
-        background-color: orange;
-        border: none;
-        width: 150px;
-        height: 150px;
-        margin: 10px;
-      }
-      
-      footer {
-        background-color: black;
-        color: white;
-        text-align: center;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>JOGOS MELECA</h1>
-    <h2>Para passar o seu tempo! Conheça aqui na página como jogá-los!</h2>
-    <button onclick="window.open('bingo.pdf', '_blank');"><img src="bingo.jpg"></button>
-    <button onclick="window.open('buraco.pdf', '_blank');"><img src="buraco.jpg"></button>
-    <button onclick="window.open('damas.pdf', '_blank');"><img src="damas.jpg"></button>
-    <button onclick="window.open('domino.pdf', '_blank');"><img src="domino.jpg"></button>
-    <button onclick="window.open('loto.pdf', '_blank');"><img src="loto.jpg"></button>
-    <button onclick="window.open('parcheesi.pdf', '_blank');"><img src="parcheesi.jpg"></button>
-    <button onclick="window.open('tombola.pdf', '_blank');"><img src="tombola.jpg"></button>
-    <button onclick="window.open('xadrez.pdf', '_blank');"><img src="xadrez.jpg"></button>
-    <footer>Criado por Fábio Santos</footer>
-  </body>
+<head>
+	<title>JOGOS MELECA</title>
+	<style>
+		body {
+			background-image: url("campo.jpg");
+			background-size: cover;
+			margin: 0;
+			padding: 0;
+		}
+		h1, h2 {
+			color: yellow;
+			text-align: center;
+		}
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+			margin: 50px;
+		}
+		.button {
+			background-color: orange;
+			border: none;
+			padding: 0;
+			margin: 10px;
+			width: 200px;
+			height: 200px;
+			overflow: hidden;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 10px;
+			box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+		}
+		.button img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	</style>
+</head>
+<body>
+	<h1>JOGOS MELECA</h1>
+	<h2>Para passar o seu tempo! Conheça aqui na página como jogá-los!</h2>
+	<div class="container">
+		<div class="button">
+			<a href="bingo.pdf"><img src="bingo.jpg"></a>
+		</div>
+		<div class="button">
+			<a href="buraco.pdf"><img src="buraco.jpg"></a>
+		</div>
+		<div class="button">
+			<a href="tombola.pdf"><img src="tombola.jpg"></a>
+		</div>
+		<div class="button">
+			<a href="parcheesi.pdf"><img src="parcheesi.jpg"></a>
+		</div>
+		<div class="button">
+			<a href="loto.pdf"><img src="loto.jpg"></a>
+		</div>
+		<div class="button">
+			<a href="domino.pdf"><img src="domino.jpg"></a>
+		</div>
+		<div class="button">
+			<a href="xadrez.pdf"><img src="xadrez.jpg"></a>
+		</div>
+		<div class="button">
+			<a href="damas.pdf"><img src="damas.jpg"></a>
+		</div>
+	</div>
+	<footer>
+		<p style="text-align: center; color: white;">Criado por Fábio Santos</p>
+	</footer>
+</body>
 </html>
+
 
 
 
